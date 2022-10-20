@@ -1,0 +1,34 @@
+@media (max-width:768px) {
+
+
+
+/* la nav mobile */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding: 3% 0;
+    /* box-shadow: 0 0 24px 0 #968f8fde; */
+    position: relative;
+}
+
+.imgLogo {
+    inline-size: 250px;
+}
+
+.lieu {
+    padding: 0 100%;
+    background: #ededed;;
+    inline-size: 29%;
+    box-shadow:inset 1px 16px 20px #9d95952b;
+    border-top: double #bab6b6;
+}
+
+
+
+
+}
