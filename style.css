@@ -61,6 +61,90 @@ header {
     box-shadow: 0 7px 6px 1px #d6d3d3b3;
 }
 
+/* Le main mobile  */
+
+
+/* Fonctionnement */
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boutonFonct {
+    color: black;
+    background: rgb(247 247 247);
+    border-radius: 29px;
+    /* border: 0.5px solid #f2f2f2; */
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    inline-size: 321px;
+    padding: 1% 5%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    box-shadow: 0 7px 12px 1px #bab7b787;
+}
+
+.iconFonct {
+    font-size: x-large;
+    color: #989595;
+}
+
+.boutonFonct:hover {
+    background-color: rgb(214 229 239);
+}
+
+.iconFonct:hover {
+    color: rgb(173, 98, 235);
+}
+
+.numeroF {
+    border-radius: 100%;
+    border: 0.7px solid rgb(217, 215, 215);
+    background-color: #9812cd;
+    padding: 10px 16px;
+    color: white;
+    margin-left: -26%;
+}
+
+/* Restaurants */
+
+.restaurant {
+    background-color: #f7f7f7;
+    padding-top: 6%;
+}
+
+.listRestau {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carteRestaurant {
+    width: 369px;
+    height: 212px;
+    border: 0.5px solid #f2f2f2;
+    /* background-color: white; */
+    border-radius: 20px;
+    padding: 1px;
+}
+
+.imgRestaurant {
+    width: 100%;
+    height: 212px;
+}
+
+.paragraphe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconFavoris {
+    font-size: x-large;
+}
 
 
 
