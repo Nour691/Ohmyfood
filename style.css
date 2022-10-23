@@ -1,4 +1,4 @@
-@media (max-width:768px) {
+/* @media (max-width:768px) { */
 
 
 
@@ -12,7 +12,6 @@ nav {
 
 .logo {
     padding: 3% 0;
-    /* box-shadow: 0 0 24px 0 #968f8fde; */
     position: relative;
 }
 
@@ -21,14 +20,49 @@ nav {
 }
 
 .lieu {
-    padding: 0 100%;
-    background: #ededed;;
+    padding: 0 37%;
+    background: #e5e5e5;
     inline-size: 29%;
-    box-shadow:inset 1px 16px 20px #9d95952b;
+    box-shadow: inset 1px 16px 20px #9d95952b;
     border-top: double #bab6b6;
 }
 
-
-
-
+.iconMaps {
+    font-size: 20px;
+    margin-right: 11%;
 }
+
+/* Le header mobile  */
+
+header {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -2%;
+}
+
+.explore {
+    padding: 5% 19% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boutonExplorer {
+    color: white;
+    background: linear-gradient(rgb(223, 84, 188),rgb(214, 100, 234));
+    border-radius: 29px;
+    border: 0.5px solid #f2f2f2;
+    align-items: center;
+    margin: 17px 0 0;
+    padding: 0 5%;
+    cursor: pointer;
+    box-shadow: 0 7px 6px 1px #d6d3d3b3;
+}
+
+
+
+
+
+/* } */
