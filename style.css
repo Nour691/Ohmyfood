@@ -1,6 +1,6 @@
 /* @media (max-width:768px) { */
 
-
+/* Accueil */
 
 /* la nav mobile */
 
@@ -180,6 +180,24 @@ footer {
 .iconFooter2 {
     margin-right: 2%;
 }
+
+
+/* Menu a la française */
+
+/* la nav mobile */
+
+.logo1 {
+     padding: 3% /*121px*/; 
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: -21%;
+}
+
 
 
 
