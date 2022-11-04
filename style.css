@@ -2,6 +2,11 @@
 
 /* Accueil */
 
+
+html, body {
+    font-family: "Roboto";
+}
+
 /* la nav mobile */
 
 nav {
@@ -21,7 +26,7 @@ nav {
 
 .lieu {
     padding: 0 36%;
-    background: #e5e5e5;
+    background: #eaeaea;
     inline-size: 29%;
     box-shadow: inset 1px 16px 20px #9d95952b;
     border-top: double #bab6b6;
@@ -35,7 +40,7 @@ nav {
 /* Le header mobile  */
 
 header {
-    background-color: #f7f7f7;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +56,7 @@ header {
 
 .boutonExplorer {
     color: white;
-    background: linear-gradient(rgb(223, 84, 188),rgb(214, 100, 234));
+    background: linear-gradient(#e771da,#a75ddb);
     border-radius: 29px;
     border: 0.5px solid #f2f2f2;
     align-items: center;
@@ -74,7 +79,7 @@ header {
 
 .boutonFonct {
     color: black;
-    background: rgb(247 247 247);
+    background: #f6f6f6;
     border-radius: 29px;
     /* border: 0.5px solid #f2f2f2; */
     align-items: center;
@@ -93,17 +98,17 @@ header {
 }
 
 .boutonFonct:hover {
-    background-color: rgb(214 229 239);
+    background-color: #f5edff;
 }
 
 .iconFonct:hover {
-    color: rgb(173, 98, 235);
+    color: #9356dc;
 }
 
 .numeroF {
     border-radius: 100%;
     border: 0.7px solid rgb(217, 215, 215);
-    background-color: #9812cd;
+    background-color: #9356dc;
     padding: 10px 16px;
     color: white;
     margin-left: -26%;
@@ -112,7 +117,7 @@ header {
 /* Restaurants */
 
 .restaurant {
-    background-color: #f7f7f7;
+    background-color: #f6f6f6;
     padding-top: 6%;
     padding-bottom: 2%;
 }
@@ -142,8 +147,9 @@ header {
 
 .motNouveau {
     margin: -47% 5% 37% 75%;
-    background: #99E2D0;
-    color: #49bd98;
+    border-radius: 4px;
+    background: #99e2d0;
+    color: #1b9779;
     position: relative;
     padding: 2%;
 }
@@ -162,9 +168,15 @@ header {
 /* Le footer mobile */
 
 footer {
-    background-color: black;
+    background-color: #353535;
     color: white;
     padding: 3% 0 3% 5%;
+}
+
+.titre {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Shrikhand', cursive;
+    font-size: larger;
 }
 
 .paragrapheFooter {
@@ -181,6 +193,10 @@ footer {
     margin-right: 2%;
 }
 
+.mail {
+    text-decoration: none;
+    color: white;
+}
 
 /* Menu a la française */
 
