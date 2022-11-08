@@ -9,7 +9,7 @@ html, body {
 
 /* la nav mobile */
 
-nav {
+.navAccueil {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ nav {
 
 /* Le header mobile  */
 
-header {
+.headerAccueil {
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
@@ -214,7 +214,53 @@ footer {
     margin-left: -21%;
 }
 
+.imgMALF {
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
+}
 
+.mainMALF {
+    background-color: #f6f6f6;
+    /* padding-top: 6%; */
+    padding-bottom: 2%;
+    position: relative;
+    border-radius: 48px 48px 0 0;
+    margin-top: -8%;
+}
 
+.titreMenu {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.detailMenu {
+    font-family: 'Shrikhand', cursive;
+    font-size: xx-large;
+    margin-right: 35%;
+}
+
+.ligne {
+    padding-left: 5%;
+}
+
+.lesAssiettes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.assiette {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 13px 9px #dbd8d88a;
+    width: 87%;
+    border-radius: 18px;
+    padding: 0 3%;
+    margin-bottom: 3%;
+}
 
 /* } */
