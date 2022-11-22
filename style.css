@@ -17,21 +17,24 @@ html, body {
   position: relative;
   width: 80px;
   height: 80px;
-  animation: 3s;
+  /* animation: 3s; */
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: 40px 40px;
+  /* display: block; */
 }
 .lds-roller div:after {
   content: " ";
-  display: block;
+  /* display: block; */
   position: absolute;
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: red;
   margin: -4px 0 0 -4px;
+  /* display: none; */
+
 }
 .lds-roller div:nth-child(1) {
   animation-delay: -0.036s;
@@ -109,15 +112,15 @@ html, body {
     -webkit-box-pack: center;
     /* -ms-flex-pack: center; */
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    /* -webkit-box-align: center; */
+    /* -ms-flex-align: center; */
     align-items: center;
-    /* background-color: #99E2D0; */
+    background-color: #99E2D0;
 }
 
 div.lds-roller {
     /* width: 40%; */
-    animation-duration: 10s;
+    animation-duration: 3s;
     -webkit-animation: deplacement 5s linear; /* Safari, Opera, Chrome */
     animation: deplacement 5s linear; /* Tous les autres navigateurs */
     animation-iteration-count: 2;
@@ -515,7 +518,7 @@ footer {
     align-items: center;
 }
 
-.assiette {
+/* .assiette {
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -525,7 +528,7 @@ footer {
     border-radius: 18px;
     padding: 0 3%;
     margin-bottom: 3%;
-}
+} */
 
 /* slide test */
 
@@ -551,13 +554,13 @@ footer {
     background-color: green ;
 } */
 
-.m-card {
+.assiette {
     cursor: pointer;
     background-color: #fff;
     -webkit-box-shadow: -2px 2px 10px rgb(0 0 0 / 25%);
     box-shadow: -2px 2px 10px rgb(0 0 0 / 25%);
-    border-radius: 1em;
-    margin-bottom: 1em;
+    border-radius: 17px;
+    margin-bottom: 13px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -565,19 +568,22 @@ footer {
     /* flex-wrap: nowrap; */
     overflow: hidden;
     width: 92%;
+    justify-content: space-between;
 }
 
-.m-content {
+.platM {
     display: flex;
     justify-content: space-between;
     width: 96%;
+    height: 90px;
+    padding: 0 2%;
 }
 
-.m-card:hover .m-content {
-    width: 80%;
+.assiette:hover .platM {
+    /* width: 80%; */
 }
 
-.m-card .m-content .m-text {
+.assiette .platM .textM {
     /* padding: 1em 0.5em; */
     white-space: nowrap;
     overflow: hidden;
@@ -586,22 +592,23 @@ footer {
     justify-content: space-evenly;
 }
 
-.m-card .m-content .m-price {
-    padding-top: 11%;
+.assiette .platM .prixM {
+    padding-top: 37px;
 }
 
-.m-card:hover .m-icon {
+.assiette:hover .iconM {
     opacity: 1;
     width: 20%;
 }
 
-.m-card:hover .m-icon i {
+.assiette:hover .iconM i {
     opacity: 1;
-    -webkit-animation: rotation 1000ms 1 linear;
-    animation: rotation 1000ms 1 linear;
+    /* -webkit-animation: rotation 1000ms 3 linear;
+    animation: rotation 1000ms 1 linear; */
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.m-card .m-icon i {
+.assiette .iconM i {
     color: #fff;
     font-size: 1.5em;
     opacity: 0;
@@ -609,13 +616,13 @@ footer {
     transition: opacity 1000ms;
 }
 
-.m-card .m-content .m-text h3, .m-card .m-content .m-text p {
+.assiette .platM .textM h3, .assiette .platM .textM p {
     margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.m-card .m-icon {
+.assiette .iconM {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
