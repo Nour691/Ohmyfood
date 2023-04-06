@@ -7,146 +7,92 @@ html, body {
     font-family: "Roboto";
 }
 
+/* Vrai loading */
 
-/* loading test */
-
-
-
-.lds-roller {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  /* animation: 3s; */
-}
-.lds-roller div {
-  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  transform-origin: 40px 40px;
-  /* display: block; */
-}
-.lds-roller div:after {
-  content: " ";
-  /* display: block; */
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: red;
-  margin: -4px 0 0 -4px;
-  /* display: none; */
-
-}
-.lds-roller div:nth-child(1) {
-  animation-delay: -0.036s;
-}
-.lds-roller div:nth-child(1):after {
-  top: 63px;
-  left: 63px;
-}
-.lds-roller div:nth-child(2) {
-  animation-delay: -0.072s;
-}
-.lds-roller div:nth-child(2):after {
-  top: 68px;
-  left: 56px;
-}
-.lds-roller div:nth-child(3) {
-  animation-delay: -0.108s;
-}
-.lds-roller div:nth-child(3):after {
-  top: 71px;
-  left: 48px;
-}
-.lds-roller div:nth-child(4) {
-  animation-delay: -0.144s;
-}
-.lds-roller div:nth-child(4):after {
-  top: 72px;
-  left: 40px;
-}
-.lds-roller div:nth-child(5) {
-  animation-delay: -0.18s;
-}
-.lds-roller div:nth-child(5):after {
-  top: 71px;
-  left: 32px;
-}
-.lds-roller div:nth-child(6) {
-  animation-delay: -0.216s;
-}
-.lds-roller div:nth-child(6):after {
-  top: 68px;
-  left: 24px;
-}
-.lds-roller div:nth-child(7) {
-  animation-delay: -0.252s;
-}
-.lds-roller div:nth-child(7):after {
-  top: 63px;
-  left: 17px;
-}
-.lds-roller div:nth-child(8) {
-  animation-delay: -0.288s;
-}
-.lds-roller div:nth-child(8):after {
-  top: 56px;
-  left: 12px;
-}
-@keyframes lds-roller {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* .load {
+.container {
     z-index: 10;
     height: 100vh;
     width: 100vw;
     position: fixed;
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
     display: flex;
     -webkit-box-pack: center;
-    /* -ms-flex-pack: center; */
-    justify-content: center;
-    /* -webkit-box-align: center; */
-    /* -ms-flex-align: center; */
-    align-items: center;
-    background-color: #99E2D0; */
-/* } */
-
-div.lds-roller {
-    /* width: 40%; */
-    animation-duration: 3s;
-    -webkit-animation: deplacement 5s linear; /* Safari, Opera, Chrome */
-    animation: deplacement 5s linear; /* Tous les autres navigateurs */
-    animation-iteration-count: 2;
-    animation-fill-mode:forwards;
-  }
-
-/* loading test */
-
-.loading {
-    z-index: 10;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
-    display: flex;
-    -webkit-box-pack: center;
-    /* -ms-flex-pack: center; */
     justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: #99E2D0;
-    /* -webkit-animation: 3s;
-    animation: 3s; */
+    animation: container 2s forwards cubic-bezier(0,0,0,0);
 }
+
+.text{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 2%;
+}
+
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.loading .line-box {
+
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.loading .line-box .line{
+
+    height: 20px;
+    border-radius: 20px;
+    background: #1b9779;
+    animation: loading 2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+    
+    0%{
+        width: 0%;
+    }
+    99%{
+    
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes container {
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+
+    99%{
+        width: 100%;
+        height: 100%;
+    }
+
+    100%{
+        width:0%;
+        height: 0%;
+    }
+}
+
+
+
+
+
+/* loading test */
+
 
 @keyframe {
 0% {opacity:0;}
@@ -504,8 +450,7 @@ footer {
 
 .destopNone1M {
     position: relative;
-    /* background: white; */
-    margin-left: -24%;
+    margin-left: 16%;
 }
 
 .destopNone2M {
@@ -541,18 +486,6 @@ footer {
     margin-bottom: 3%;
 } */
 
-/* slide test */
-
-.slide {
-  width: 1px;
-  height: 100px;
-  background: red;
-  transition: width 2s;
-}
-
-.slide:hover {
-  width: 300px;
-}
 
 /* Slide test */
 
@@ -576,7 +509,6 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-    /* flex-wrap: nowrap; */
     overflow: hidden;
     width: 38%;
     justify-content: space-between;
@@ -590,12 +522,8 @@ footer {
     padding: 0 2%;
 }
 
-.assiette:hover .platM {
-    /* width: 80%; */
-}
 
 .assiette .platM .textM {
-    /* padding: 1em 0.5em; */
     white-space: nowrap;
     overflow: hidden;
     display: flex;
@@ -614,9 +542,16 @@ footer {
 
 .assiette:hover .iconM i {
     opacity: 1;
-    /* -webkit-animation: rotation 1000ms 3 linear;
-    animation: rotation 1000ms 1 linear; */
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .assiette .iconM i {
@@ -645,7 +580,6 @@ footer {
     align-items: center;
     border-radius: 0 1em 1em 0;
     background-color: #99E2D0;
-    /* height: 73px; */
     width: 0%;
     opacity: 0;
     -webkit-transition: width 1000ms, opacity 1000ms;
@@ -728,8 +662,6 @@ footer {
     border-radius: 29px;
     border: 0.5px solid #f2f2f2;
     align-items: center;
-    /* margin: 17px 0 0; */
-    /* padding: 0 5%; */
     cursor: pointer;
     box-shadow: 0 7px 6px 1px #d6d3d3b3;
     inline-size: 101px;
@@ -756,7 +688,6 @@ footer {
     color: black;
     background: #f6f6f6;
     border-radius: 29px;
-    /* border: 0.5px solid #f2f2f2; */
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -809,7 +740,6 @@ footer {
 
 .carteRestaurant {
     width: 404px;
-    /* border: 0.5px solid #d5d2d2; */
     background-color: white;
     border-radius: 20px;
     padding: 1px;
@@ -927,8 +857,7 @@ footer {
 
 .destopNone1M {
     position: relative;
-    /* background: white; */
-    margin-left: -24%;
+    margin-left: 16%;
 }
 
 .destopNone2M {
