@@ -404,7 +404,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     overflow: hidden;
     width: 38%;
     justify-content: space-between;
@@ -786,7 +785,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     overflow: hidden;
     width: 92%;
     justify-content: space-between;
